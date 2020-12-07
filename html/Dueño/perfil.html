@@ -19,6 +19,12 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function habilita() {
+            $(".inputText").removeAttr("readonly");
+        }
+    </script>
 </head>
 
 <body>
@@ -70,6 +76,9 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="d-flex align-items-center hide-on-small-only" style="padding: 20px 20px 40px 300px;">
+                        <h5 class="font-medium m-b-0">Catalogo de talleres de San Miguel</h5>
+                    </div>
                 </div>
             </nav>
             <!-- ============================================================== -->
@@ -111,43 +120,43 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">face</i>
-                                            <input readonly placeholder="John" id="name" type="text">
+                                            <input class="inputText white-text" readonly value="John" id="name" type="text">
                                             <label for="name" class="white-text">Nombre</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">face</i>
-                                            <input readonly placeholder="Doe" id="lastname" type="text">
+                                            <input class="inputText white-text" readonly value="Doe" id="lastname" type="text">
                                             <label for="lastname" class="white-text">Apellido</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">account_circle</i>
-                                            <input readonly placeholder="Johndoe" id="username" type="text">
+                                            <input class="inputText white-text" readonly value="Johndoe" id="username" type="text">
                                             <label for="username" class="white-text">Usuario</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">lock</i>
-                                            <input readonly placeholder="Contraseña" id="password" type="password">
+                                            <input class="inputText white-text" readonly value="Contraseña" id="password" type="password">
                                             <label for="password" class="white-text">Password</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12 m4 l4">
-                                            <button class="btn blue-grey waves-effect waves-light col s12 m12 l12" type="submit" name="action">Modificar dueño
-                                            </button>
+                                            <a class="btn blue-grey waves-effect waves-light col s12 m12 l12" onclick="habilita();">Modificar dueño
+                                            </a>
                                         </div>
                                         <div class="input-field col s12 m4 l4">
                                             <button class="btn blue-grey waves-effect waves-light col s12 m12 l12" type="submit" name="action">Guardar dueño
                                             </button>
                                         </div>
                                         <div class="input-field col s12 m4 l4">
-                                            <button class="btn blue-grey waves-effect waves-light col s12 m12 l12"  type="submit" name="action">Eliminar dueño
-                                            </button>
+                                            <a class="btn blue-grey waves-effect waves-light col s12 m12 l12">Eliminar dueño
+                                            </a>
                                         </div>
                                     </div>
                                 </form>

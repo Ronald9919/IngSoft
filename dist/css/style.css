@@ -9631,22 +9631,22 @@ nav i.material-icons {
     .left-sidebar .sidenav ul > li.active {
       background-color: transparent; }
       .left-sidebar .sidenav ul > li.active > .collapsible-header {
-        /* fallback/image non-cover color */
-        background-color: #11d7e4;
-        /* Firefox 3.6+ */
-        background-image: -moz-linear-gradient(left, #11d7e4 0%, #48eaa1 100%);
-        /* Safari 4+, Chrome 1+ */
-        background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #11d7e4), color-stop(100%, #48eaa1));
-        /* Safari 5.1+, Chrome 10+ */
-        background-image: -webkit-linear-gradient(left, #11d7e4 0%, #48eaa1 100%);
-        /* Opera 11.10+ */
-        background-image: -o-linear-gradient(left, #11d7e4 0%, #48eaa1 100%);
-        /* IE10+ */
-        background: -ms-linear-gradient(left, #11d7e4 0%, #48eaa1 100%);
-        /* Standard */
-        background: linear-gradient(to right, #11d7e4 0%, #48eaa1 100%);
-        /* IE6-9 */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+  /* fallback/image non-cover color */
+  background-color: #7f9bff;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, #7f9bff 0%, #2ddeff 100%);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #7f9bff), color-stop(100%, #2ddeff));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, #7f9bff 0%, #2ddeff 100%);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, #7f9bff 0%, #2ddeff 100%);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, #7f9bff 0%, #2ddeff 100%);
+  /* Standard */
+  background: linear-gradient(to right, #7f9bff 0%, #2ddeff 100%);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 ); 
         border-radius: 60px; }
         .left-sidebar .sidenav ul > li.active > .collapsible-header i,
         .left-sidebar .sidenav ul > li.active > .collapsible-header .hide-menu {
