@@ -6189,7 +6189,9 @@ input[type=range]::-ms-thumb {
   .tap-target-wrapper.open .tap-target-wave::after {
     visibility: visible;
     animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    transition: opacity .3s, transform .3s, visibility 0s 1s; }
+    transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s; }
 
 .tap-target {
   position: absolute;
@@ -6224,7 +6226,9 @@ input[type=range]::-ms-thumb {
     transition: transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -10316,7 +10320,7 @@ Preloader
   #main-wrapper[data-layout="vertical"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin4"], #main-wrapper[data-layout="horizontal"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin4"] {
     background: #6659f7 !important; }
   #main-wrapper[data-layout="vertical"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin5"], #main-wrapper[data-layout="horizontal"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin5"] {
-    background: #273146 !important; }
+    background: #2962FF !important; }
   #main-wrapper[data-layout="vertical"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin6"], #main-wrapper[data-layout="horizontal"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin6"] {
     background: #fff !important; }
     #main-wrapper[data-layout="vertical"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin6"] .dark-logo, #main-wrapper[data-layout="horizontal"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin6"] .dark-logo {
@@ -10362,7 +10366,7 @@ Preloader
     #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin4"] .collapsible-body, #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin4"] .collapsible-body {
       background-color: #6659f7 !important; }
   #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin5"], #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin5"] {
-    background-color: #273146 !important; }
+    background-color: #2962FF !important; }
     #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin5"] .collapsible-body, #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin5"] .collapsible-body {
       background-color: #273146 !important; }
   #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin6"], #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin6"] {
