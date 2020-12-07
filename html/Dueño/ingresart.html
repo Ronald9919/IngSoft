@@ -19,12 +19,6 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        function habilita() {
-            $(".inputText").removeAttr("readonly");
-        }
-    </script>
 </head>
 
 <body>
@@ -92,22 +86,25 @@
                     <ul class="collapsible">
                         <li class="small-cap"><span class="hide-menu">Dueño</span></li>
                         <li>
-                            <a href="ingresar.html" class="collapsible-header"><i class="material-icons">person_add</i><span class="hide-menu"> Registrar dueño </span></a>
+                            <a href="perfild.html" class="collapsible-header"><i class="material-icons">person</i><span class="hide-menu"> Ver perfil </span></a>
+                        </li>
+                        <li class="small-cap"><span class="hide-menu">Taller</span></li>
+                        <li>
+                            <a href="ingresart.html" class="collapsible-header"><i class="material-icons">add</i><span class="hide-menu"> Registrar taller </span></a>
                         </li>
                         <li>
-                            <a href="perfil.html" class="collapsible-header"><i class="material-icons">person</i><span class="hide-menu"> Ver perfil </span></a>
+                            <a href="perfilt.html" class="collapsible-header"><i class="material-icons">business_center</i><span class="hide-menu"> Perfil del taller </span></a>
                         </li>
                         <li>
-                            <a href="faqs.html" class="collapsible-header"><i class="material-icons">people_outline</i><span class="hide-menu"> FAQs </span></a>
+                            <a href="catalogo.html" class="collapsible-header"><i class="material-icons">build</i><span class="hide-menu"> Catalogo de talleres </span></a>
                         </li>
                     </ul>
                 </li>
-            </ul>
         </aside>
         <div class="page-wrapper">
             <div class="page-titles">
                 <div class="d-flex align-items-center">
-                    <h5 class="font-medium m-b-0">Perfil Dueño</h5>
+                    <h5 class="font-medium m-b-0">Ingresar Dueño</h5>
                 </div>
             </div>
             <div class="container-fluid">
@@ -115,48 +112,47 @@
                     <div class="col s12 m12 l12">
                         <div class="card custom-gradient">
                             <div class="card-content">
-                                <h5 class="card-title white-text">Informacion dueño</h5>
-                                <form>
+                                <h5 class="card-title white-text">Registrar taller</h5>
+                                <form action="ingresart.html">
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <i class="material-icons prefix white-text">face</i>
-                                            <input class="inputText white-text" readonly value="John" id="name" type="text">
-                                            <label for="name" class="white-text">Nombre</label>
+                                            <i class="material-icons prefix white-text">build</i>
+                                            <input class="white-text" placeholder="Taller de Jhon Doe" id="name" type="text">
+                                            <label for="name" class="white-text">Nombre del Taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">face</i>
-                                            <input class="inputText white-text" readonly value="Doe" id="lastname" type="text">
-                                            <label for="lastname" class="white-text">Apellido</label>
+                                            <input class="white-text" placeholder="Jhon Doe" id="bossname" type="text">
+                                            <label for="bossname" class="white-text">Nombre del dueño</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <i class="material-icons prefix white-text">account_circle</i>
-                                            <input class="inputText white-text" readonly value="Johndoe" id="username" type="text">
-                                            <label for="username" class="white-text">Usuario</label>
+                                            <i class="material-icons prefix white-text">location_on</i>
+                                            <input class="white-text" placeholder="La direccion de Jhon Doe" id="direction" type="text">
+                                            <label for="direction" class="white-text">Direccion del taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <i class="material-icons prefix white-text">lock</i>
-                                            <input class="inputText white-text" readonly value="Contraseña" id="password" type="password">
-                                            <label for="password" class="white-text">Password</label>
+                                            <i class="material-icons prefix white-text">call</i>
+                                            <input class="white-text" placeholder="75463723" id="phone" type="number">
+                                            <label for="phone" class="white-text">Telefono del taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="input-field col s12 m4 l4">
-                                            <a class="btn blue-grey waves-effect waves-light col s12 m12 l12" onclick="habilita();">Modificar dueño
-                                            </a>
+                                        <div class="input-field col s12">
+                                            <i class="material-icons prefix white-text">business_center</i>
+                                            <input class="white-text" placeholder="Mecanica automotriz" id="services" type="text">
+                                            <label for="services" class="white-text">Servicios</label>
                                         </div>
-                                        <div class="input-field col s12 m4 l4">
-                                            <button class="btn blue-grey waves-effect waves-light col s12 m12 l12" type="submit" name="action">Guardar dueño
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <button class="btn blue-grey waves-effect waves-light right" type="submit" name="action">Registrar taller
                                             </button>
-                                        </div>
-                                        <div class="input-field col s12 m4 l4">
-                                            <a class="btn blue-grey waves-effect waves-light col s12 m12 l12">Eliminar dueño
-                                            </a>
                                         </div>
                                     </div>
                                 </form>
