@@ -10320,7 +10320,7 @@ Preloader
   #main-wrapper[data-layout="vertical"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin4"], #main-wrapper[data-layout="horizontal"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin4"] {
     background: #6659f7 !important; }
   #main-wrapper[data-layout="vertical"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin5"], #main-wrapper[data-layout="horizontal"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin5"] {
-    background: #2962FF !important; }
+    background: #607d8b !important; }
   #main-wrapper[data-layout="vertical"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin6"], #main-wrapper[data-layout="horizontal"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin6"] {
     background: #fff !important; }
     #main-wrapper[data-layout="vertical"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin6"] .dark-logo, #main-wrapper[data-layout="horizontal"] .topbar nav .nav-wrapper .brand-logo[data-logobg="skin6"] .dark-logo {
@@ -10366,9 +10366,9 @@ Preloader
     #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin4"] .collapsible-body, #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin4"] .collapsible-body {
       background-color: #6659f7 !important; }
   #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin5"], #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin5"] {
-    background-color: #2962FF !important; }
+    background-color: #607d8b !important; }
     #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin5"] .collapsible-body, #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin5"] .collapsible-body {
-      background-color: #273146 !important; }
+      background-color: #607d8b !important; }
   #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin6"], #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin6"] {
     background-color: #fff !important; }
     #main-wrapper[data-layout="vertical"] .left-sidebar .sidenav[data-sidebarbg="skin6"] ul li.small-cap, #main-wrapper[data-layout="horizontal"] .left-sidebar .sidenav[data-sidebarbg="skin6"] ul li.small-cap {
@@ -12641,6 +12641,25 @@ c3 charts
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
   padding: 7px 15px !important;
   font-size: 13px !important; }
+
+  .custom-gradient{
+    /* fallback/image non-cover color */
+    background-color: #607d8b;
+    /* Firefox 3.6+ */
+    background-image: -moz-linear-gradient(left, #607d8b 0%, #7f9bff 100%);
+    /* Safari 4+, Chrome 1+ */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #607d8b), color-stop(100%, #7f9bff));
+    /* Safari 5.1+, Chrome 10+ */
+    background-image: -webkit-linear-gradient(left, #607d8b 0%, #7f9bff 100%);
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(left, #607d8b 0%, #7f9bff 100%);
+    /* IE10+ */
+    background: -ms-linear-gradient(left, #607d8b 0%, #7f9bff 100%);
+    /* Standard */
+    background: linear-gradient(to right, #607d8b 0%, #7f9bff 100%);
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 ); 
+}
 
 .info-gradient {
   /* fallback/image non-cover color */

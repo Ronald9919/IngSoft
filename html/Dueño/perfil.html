@@ -12,7 +12,7 @@
     <link href="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
     <link href="../../dist/css/style.css" rel="stylesheet">
     <!-- This page CSS -->
-    <link href="../../dist/css/pages/dashboard1.css" rel="stylesheet">
+    <link href="../../assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -78,15 +78,15 @@
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <aside class="left-sidebar">
-            <ul id="slide-out" class="sidenav white-text">
+            <ul id="slide-out" class="sidenav">
                 <li>
                     <ul class="collapsible">
-                        <li class="small-cap"><span class="hide-menu">Single Link</span></li>
+                        <li class="small-cap"><span class="hide-menu">Dueño</span></li>
                         <li>
-                            <a href="../../docs/documentation.html" class="collapsible-header"><i class="material-icons">content_paste</i><span class="hide-menu"> Registrar dueño </span></a>
+                            <a href="ingresar.html" class="collapsible-header"><i class="material-icons">person_add</i><span class="hide-menu"> Registrar dueño </span></a>
                         </li>
                         <li>
-                            <a href="logout.html" class="collapsible-header"><i class="material-icons">directions</i><span class="hide-menu"> Log Out </span></a>
+                            <a href="perfil.html" class="collapsible-header"><i class="material-icons">person</i><span class="hide-menu"> Ver perfil </span></a>
                         </li>
                         <li>
                             <a href="faqs.html" class="collapsible-header"><i class="material-icons">people_outline</i><span class="hide-menu"> FAQs </span></a>
@@ -96,40 +96,57 @@
             </ul>
         </aside>
         <div class="page-wrapper">
+            <div class="page-titles">
+                <div class="d-flex align-items-center">
+                    <h5 class="font-medium m-b-0">Perfil Dueño</h5>
+                </div>
+            </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <div class="card">
+                        <div class="card custom-gradient">
                             <div class="card-content">
-                                <h5 class="card-title">Form with placeholder</h5>
+                                <h5 class="card-title white-text">Informacion dueño</h5>
                                 <form>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input placeholder="John Doe" id="name2" type="text">
-                                            <label for="name2">Name</label>
+                                            <i class="material-icons prefix white-text">face</i>
+                                            <input readonly placeholder="John" id="name" type="text">
+                                            <label for="name" class="white-text">Nombre</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input placeholder="john@domainname.com" id="email2" type="email">
-                                            <label for="email2">Email</label>
+                                            <i class="material-icons prefix white-text">face</i>
+                                            <input readonly placeholder="Doe" id="lastname" type="text">
+                                            <label for="lastname" class="white-text">Apellido</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input placeholder="YourPassword" id="password2" type="password">
-                                            <label for="password2">Password</label>
+                                            <i class="material-icons prefix white-text">account_circle</i>
+                                            <input readonly placeholder="Johndoe" id="username" type="text">
+                                            <label for="username" class="white-text">Usuario</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <textarea placeholder="Oh WoW! Let me check this one too." id="message2" class="materialize-textarea"></textarea>
-                                            <label for="message2">Message</label>
+                                            <i class="material-icons prefix white-text">lock</i>
+                                            <input readonly placeholder="Contraseña" id="password" type="password">
+                                            <label for="password" class="white-text">Password</label>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="input-field col s12">
-                                            <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
+                                        <div class="input-field col s12 m4 l4">
+                                            <button class="btn blue-grey waves-effect waves-light col s12 m12 l12" type="submit" name="action">Modificar dueño
+                                            </button>
+                                        </div>
+                                        <div class="input-field col s12 m4 l4">
+                                            <button class="btn blue-grey waves-effect waves-light col s12 m12 l12" type="submit" name="action">Guardar dueño
+                                            </button>
+                                        </div>
+                                        <div class="input-field col s12 m4 l4">
+                                            <button class="btn blue-grey waves-effect waves-light col s12 m12 l12"  type="submit" name="action">Eliminar dueño
                                             </button>
                                         </div>
                                     </div>
@@ -161,10 +178,8 @@
     <!-- ============================================================== -->
     <!-- This page plugin js -->
     <!-- ============================================================== -->
-    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
-    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
-    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../../assets/libs/toastr/build/toastr.min.js"></script>
+    <script src="../../assets/extra-libs/toastr/toastr-init.js"></script>
 </body>
 
 </html>
