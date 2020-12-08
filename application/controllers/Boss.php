@@ -37,8 +37,11 @@ class Boss extends CI_Controller {
 
 	public function perfilD()
 	{
-
-		$this->load->view('Dueño/perfild');
+		$id=1;
+		$x=$this->Bosss->get_id($id);
+		$data['user']=$x;
+		//print_r($data);
+		$this->load->view('Dueño/perfild',$data);
 	}
 
 	public function perfilT()
@@ -60,13 +63,28 @@ class Boss extends CI_Controller {
 			$data['contraseña']=$this->input->post('pwd');
 			$user=$this->Bosss->saverecords($data);
 			if($user>0){
-			        echo "Records Saved Successfully";
+			        echo "Dueño registrado correctamente";
 			}
 			else{
-					echo "Insert error !";
+					echo "Error en el registro de dueño!";
 			}
 		}
 	}
+
+	public function update($id = null){    
+        
+		$this->Bosss->update(
+			$this->input->post("nombre"),
+			$this->input->post("apellido"),
+			$this->input->post("usuario"),
+			$this->input->post("contraseña"));
+
+	header("location: ".base_url()."perfilD");
+   
+}
+
+
+        
 
 }
 ?>

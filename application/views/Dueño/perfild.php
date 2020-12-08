@@ -6,13 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/assets/images/favicon.png">
-    <title>Materialart Admin Template</title>
+    <title>Catatogo de Talleres</title>
     <!-- chartist CSS -->
-    <link href="<?php echo base_url(); ?>assets/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link href="<?php echo base_url(); ?>assets/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/dist/css/style.css" rel="stylesheet">
     <!-- This page CSS -->
-    <link href="<?php echo base_url(); ?>assets/assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,6 +20,13 @@
     <script>
         function habilita() {
             $(".inputText").removeAttr("readonly");
+        }
+        function vercontra(){
+            if ($("#pwd").attr("type") == "text"){
+            $("#pwd").attr("type","password"); 
+            }else {
+            $("#pwd").attr("type","text");
+            }
         }
     </script>
 </head>
@@ -124,29 +128,32 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">face</i>
-                                            <input class="inputText white-text" readonly value="John" id="name" type="text">
+                                            <input class="inputText white-text" readonly value="<?=$user->nombre?>" id="name" type="text">
                                             <label for="name" class="white-text">Nombre</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">face</i>
-                                            <input class="inputText white-text" readonly value="Doe" id="lastname" type="text">
+                                            <input class="inputText white-text" readonly value="<?=$user->apellido?>" id="lastname" type="text">
                                             <label for="lastname" class="white-text">Apellido</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">account_circle</i>
-                                            <input class="inputText white-text" readonly value="Johndoe" id="username" type="text">
+                                            <input class="inputText white-text" readonly value="<?=$user->usuario?>" id="username" type="text">
                                             <label for="username" class="white-text">Usuario</label>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="input-field col s12">
+                                        <div class="input-field col s11">
                                             <i class="material-icons prefix white-text">lock</i>
-                                            <input class="inputText white-text" readonly value="Contraseña" id="password" type="password">
-                                            <label for="password" class="white-text">Password</label>
+                                            <input class="inputText white-text" readonly value="<?=$user->contraseña?>" id="pwd" type="password">
+                                            <label for="password" class="white-text">Contraseña</label>
+                                        </div>
+                                        <div class="col s1">
+                                            <br><a class="btn-floating blue-grey" onclick="vercontra();"><i class="material-icons">remove_red_eye</i></a>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -191,8 +198,6 @@
     <!-- ============================================================== -->
     <!-- This page plugin js -->
     <!-- ============================================================== -->
-    <script src="<?php echo base_url(); ?>assets/assets/libs/toastr/build/toastr.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/assets/extra-libs/toastr/toastr-init.js"></script>
 </body>
 
 </html>

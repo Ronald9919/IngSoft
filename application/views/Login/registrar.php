@@ -57,25 +57,25 @@
                             <form class="col s12" method="post">
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input name="fname"placeholder="John" id="name" type="text">
+                                        <input name="fname"placeholder="John" id="name" type="text" required>
                                         <label for="name">Nombre</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input name="lname" placeholder="Doe" id="lastname" type="text">
+                                        <input name="lname" placeholder="Doe" id="lastname" type="text" required>
                                         <label for="lastname">Apellido</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input name="username" placeholder="Johndoe" id="username" type="text">
+                                        <input name="username" placeholder="Johndoe" id="username" type="text" required>
                                         <label for="username">Usuario</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input name="pwd" placeholder="Contraseña" id="password" type="password">
+                                        <input name="pwd" placeholder="Contraseña" id="password" type="password" required>
                                         <label for="password">Contraseña</label>
                                     </div>
                                 </div>
