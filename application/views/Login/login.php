@@ -54,7 +54,7 @@
                         </div>
                         <!-- Form -->
                         <div class="row">
-                            <form class="col s12" action="index.html">
+                            <form class="col s12" action="<?php echo base_url()?>index.php/conductor/catalogo">
                                 <!-- email -->
                                 <div class="row">
                                     <div class="input-field col s12">

@@ -84,9 +84,9 @@
             <ul id="slide-out" class="sidenav">
                 <li>
                     <ul class="collapsible">
-                        <li class="small-cap"><span class="hide-menu">Catolo</span></li>
+                        <li class="small-cap"><span class="hide-menu">Catalogo</span></li>
                         <li>
-                            <a href="catalogo.html" class="collapsible-header"><i class="material-icons">build</i><span class="hide-menu">Ver catalogo de talleres </span></a>
+                            <a href="<?php echo base_url()?>index.php/conductor/catalogo" class="collapsible-header"><i class="material-icons">build</i><span class="hide-menu">Ver catalogo de talleres </span></a>
                         </li>
                     </ul>
                 </li>

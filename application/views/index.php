@@ -54,7 +54,7 @@
                         </a>
                     </div>
                     <div class="col s12 m6">
-                        <a href="Conductor/catalogo.html">
+                        <a href="<?php echo base_url()?>index.php/conductor/catalogo">
                             <div class="card card-hover" style="background-color: transparent;">
                                 <div class="card-image" style="margin-top: 10%;">
                                     <img src="<?php echo base_url(); ?>assets/assets/images/cards/Conductor.svg" width="200px" height="200px">
