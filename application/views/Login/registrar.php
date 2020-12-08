@@ -36,7 +36,7 @@
         <!-- ============================================================== -->
         <!-- Login box.scss -->
         <!-- ============================================================== -->
-        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(assets/assets/images/big/auth-bg2.jpg) no-repeat left center;">
+        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(<?php echo base_url(); ?>assets/assets/images/big/auth-bg2.jpg) no-repeat left center;">
             <div class="container">
                 <div class="row">
                     <div class="col s12 l8 m6 demo-text">
@@ -54,34 +54,34 @@
                         </div>
                         <!-- Form -->
                         <div class="row">
-                            <form class="col s12" action="index.html">
+                            <form class="col s12" method="post">
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="John" id="name" type="text">
+                                        <input name="fname"placeholder="John" id="name" type="text">
                                         <label for="name">Nombre</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="Doe" id="lastname" type="text">
+                                        <input name="lname" placeholder="Doe" id="lastname" type="text">
                                         <label for="lastname">Apellido</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="Johndoe" id="username" type="text">
+                                        <input name="username" placeholder="Johndoe" id="username" type="text">
                                         <label for="username">Usuario</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="Contraseña" id="password" type="password">
+                                        <input name="pwd" placeholder="Contraseña" id="password" type="password">
                                         <label for="password">Contraseña</label>
                                     </div>
                                 </div>
                                 <div class="row m-t-40">
                                     <div class="col s12">
-                                        <button class="btn-large w100 red" type="submit">Registrarse</button>
+                                        <input class="btn-large w100 red" type="submit" name="save" value="Registrarse"></input>
                                     </div>
                                 </div>
                             </form>

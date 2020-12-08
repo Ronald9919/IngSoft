@@ -54,7 +54,7 @@
                         </div>
                         <!-- Form -->
                         <div class="row">
-                            <form class="col s12" action="<?php echo base_url()?>index.php/conductor/catalogo">
+                            <form class="col s12" action="<?php echo base_url()?>index.php/boss/catalogo">
                                 <!-- email -->
                                 <div class="row">
                                     <div class="input-field col s12">
@@ -75,7 +75,7 @@
                                     </div>
                                 </div>
                                 <div class="center-align m-t-20 db">
-                                    No tienes una cuenta todavia? <a href="<?php echo base_url(); ?>index.php/inicio/register">Registrate!</a>
+                                    No tienes una cuenta todavia? <a href="<?php echo base_url(); ?>index.php/boss/savedata">Registrate!</a>
                                 </div>
                             </form>
                         </div>

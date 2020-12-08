@@ -1,7 +1,13 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Boss extends CI_Controller {
+
+	function __construct(){
+		parent::__construct();
+		$this->load->database();
+		$this->load->model('Bosss');
+        
+    }
 
 	/**
 	 * Index Page for this controller.
@@ -31,6 +37,7 @@ class Boss extends CI_Controller {
 
 	public function perfilD()
 	{
+
 		$this->load->view('Dueño/perfild');
 	}
 
@@ -39,5 +46,30 @@ class Boss extends CI_Controller {
 		$this->load->view('Dueño/perfilt');
 	}
 
+	public function savedata()
+	{
+		/*load registration view form*/
+		$this->load->view('Login/registrar');
+	
+		/*Check submit button */
+		if($this->input->post('save'))
+		{
+		    $data['nombre']=$this->input->post('fname');
+			$data['apellido']=$this->input->post('lname');
+			$data['usuario']=$this->input->post('username');
+			$data['contraseña']=$this->input->post('pwd');
+			$user=$this->Bosss->saverecords($data);
+			if($user>0){
+			        echo "Records Saved Successfully";
+			}
+			else{
+					echo "Insert error !";
+			}
+		}
+	}
 
 }
+?>
+
+
+
