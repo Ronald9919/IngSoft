@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/assets/images/favicon.png">
     <title>Materialart Admin Template</title>
     <!-- chartist CSS -->
-    <link href="../../dist/css/style.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/dist/css/style.css" rel="stylesheet">
     <!-- This page CSS -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,10 +42,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col s12 m6">
-                        <a href="Dueño/perfild.html">
+                        <a href="<?php echo base_url()?>index.php/inicio/login">
                             <div class="card card-hover" style="background-color: transparent;">
                                 <div class="card-image" style="margin-top: 10%;">
-                                    <img src="/assets/images/cards/Dueño.svg" width="200px" height="200px">
+                                    <img src="<?php echo base_url(); ?>assets/assets/images/cards/Dueño.svg" width="200px" height="200px">
                                 </div>
                                 <div class="card-content center-align">
                                     <h1><b>Dueño</b></h1>
@@ -57,7 +57,7 @@
                         <a href="Conductor/catalogo.html">
                             <div class="card card-hover" style="background-color: transparent;">
                                 <div class="card-image" style="margin-top: 10%;">
-                                    <img src="/assets/images/cards/Conductor.svg" width="200px" height="200px">
+                                    <img src="<?php echo base_url(); ?>assets/assets/images/cards/Conductor.svg" width="200px" height="200px">
                                 </div>
                                 <div class="card-content center-align">
                                     <h1><b>Conductor</b></h1>
@@ -72,19 +72,19 @@
     <!-- ============================================================== -->
     <!-- All Required js -->
     <!-- ============================================================== -->
-    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="../../dist/js/materialize.min.js"></script>
-    <script src="../../assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/materialize.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
     <!-- ============================================================== -->
     <!-- Apps -->
     <!-- ============================================================== -->
-    <script src="../../dist/js/app.js"></script>
-    <script src="../../dist/js/app.init.overlay.js"></script>
-    <script src="../../dist/js/app-style-switcher.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/app.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/app.init.overlay.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/app-style-switcher.js"></script>
     <!-- ============================================================== -->
     <!-- Custom js -->
     <!-- ============================================================== -->
-    <script src="../../dist/js/custom.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/custom.min.js"></script>
     <!-- ============================================================== -->
     <!-- This page plugin js -->
     <!-- ============================================================== -->
