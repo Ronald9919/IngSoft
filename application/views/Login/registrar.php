@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="row m-t-40">
                                     <div class="col s12">
-                                        <input class="btn-large w100 red" type="submit" name="save" value="Registrarse"></input>
+                                        <input onclick="M.toast({html: 'I am a toast'})" class="btn-large w100 red" type="submit" name="save" value="Registrarse"></input>
                                     </div>
                                 </div>
                             </form>
@@ -115,6 +115,12 @@
         $(function() {
             $(".preloader").fadeOut();
         });
+    </script>
+        <script type="text/javascript">
+    var displayCustomHTMLToast = function() {
+        var toastHTML = '<span>I am toast content</span><button class="btn-flat toast-action">Undo</button>';
+        M.toast({ html: toastHTML });
+    }
     </script>
 </body>
 
