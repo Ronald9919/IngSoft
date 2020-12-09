@@ -160,7 +160,7 @@
                                             </button>
                                         </div>
                                         <div class="input-field col s12 m4 l4">
-                                            <a class="btn blue-grey waves-effect waves-light col s12 m12 l12">Eliminar Cuenta
+                                            <a href="#modalE" class="btn blue-grey waves-effect waves-light col s12 m12 l12 modal-trigger">Eliminar Cuenta
                                             </a>
                                         </div>
                                     </div>
@@ -170,7 +170,20 @@
                     </div>                 
                 </div>
             </div>
-            <footer class="center-align m-b-30">Holis</footer>
+            <div id="modalE" class="modal">
+                <div class="modal-content">
+                    <h4><i class="small material-icons">warning</i>&nbsp;ADVERTENCIA</h4>
+                    <hr style="width:100%;border: 1px solid gray">
+                    <span class="grey-text ">Esta a punto de eliminar un cliente esta seguro de eliminarlo?. Recuerde
+                        que los clientes eliminados no pueden ser recuperados.</span>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-ligth white-text btn">Cerrar</a>
+                    <a class="modal-close waves-effect waves-ligth white-text btn"
+                        href="<?php echo base_url()?>boss/delete/<?php echo $user->id; ?>">Si</a>
+                </div>
+            </div>
+            <footer class="center-align m-b-30"></footer>
         </div>
     </div>
     <!-- ============================================================== -->
