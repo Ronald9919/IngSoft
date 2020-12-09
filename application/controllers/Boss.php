@@ -13,10 +13,26 @@ class Boss extends CI_Controller {
 	public function ingresar()
 	{
 		$this->load->view('Dueño/ingresart');
+		if($this->input->post('savetaller'))
+		{
+		    $data['nombret']=$this->input->post('name');
+			$data['direccion']=$this->input->post('direction');
+			$data['telefono']=$this->input->post('tphone');
+			$data['celular']=$this->input->post('phone');
+			$data['servicios']=$this->input->post('services');
+			$user = $this->Bosss->savetaller($data);
+			if($user){
+			        echo "Taller registrado correctamente";
+			}
+			else{
+					echo "Error en el registro del taller!";
+			}
+		}
 	}
 
 	public function catalogo()
 	{
+		$data = '';
 		$this->load->view('Dueño/catalogo',$data);
 	}
 
@@ -70,6 +86,7 @@ class Boss extends CI_Controller {
 	public function delete($id){
 		$this->Bosss->delete_user($id);
 	}
+
 
 }
 ?>

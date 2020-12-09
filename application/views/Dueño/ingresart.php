@@ -13,12 +13,7 @@
     <link href="<?php echo base_url(); ?>assets/dist/css/style.css" rel="stylesheet">
     <!-- This page CSS -->
     <link href="<?php echo base_url(); ?>assets/assets/libs/toastr/build/toastr.min.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
 </head>
 
 <body>
@@ -117,7 +112,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">build</i>
-                                            <input class="white-text" placeholder="Taller de Jhon Doe" id="name" type="text">
+                                            <input class="white-text" placeholder="Taller de Jhon Doe" name="name" type="text">
                                             <label for="name" class="white-text">Nombre del Taller</label>
                                         </div>
                                     </div>
@@ -126,34 +121,34 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">location_on</i>
-                                            <input class="white-text" placeholder="La direccion de Jhon Doe" id="direction" type="text">
+                                            <input class="white-text" placeholder="La direccion de Jhon Doe" name="direction" type="text">
                                             <label for="direction" class="white-text">Direccion del taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">call</i>
-                                            <input class="white-text" placeholder="26679945" id="tphone" type="number">
+                                            <input class="white-text" placeholder="26679945" name="tphone" type="number">
                                             <label for="tphone" class="white-text">Telefono del taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">call</i>
-                                            <input class="white-text" placeholder="75463723" id="phone" type="number">
+                                            <input class="white-text" placeholder="75463723" name="phone" type="number">
                                             <label for="phone" class="white-text">Celular del taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">business_center</i>
-                                            <input class="white-text" placeholder="Mecanica automotriz" id="services" type="text">
+                                            <input class="white-text" placeholder="Mecanica automotriz" name="services" type="text">
                                             <label for="services" class="white-text">Servicios</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <button class="btn blue-grey waves-effect waves-light right" type="submit" name="action">Registrar taller
+                                            <button class="btn blue-grey waves-effect waves-light right" type="submit" name="savetaller">Registrar taller
                                             </button>
                                         </div>
                                     </div>

@@ -22,6 +22,12 @@ class Bosss extends CI_Model
 		 } 
 	}
 
+	function savetaller($data){
+		
+		return $this->db->insert('taller',$data);
+		
+	}
+
 	/*Display*/
 	function display_records()
 	{
