@@ -60,7 +60,7 @@
                                     <img src="<?php echo base_url(); ?>assets/assets/images/cards/Conductor.svg" width="200px" height="200px">
                                 </div>
                                 <div class="card-content center-align">
-                                    <h1><b>Conductor</b></h1>
+                                    <h1><b>Conductor de un taller</b></h1>
                                 </div>
                             </div>
                         </a>
