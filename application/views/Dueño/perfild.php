@@ -95,9 +95,7 @@
                         <li>
                             <a href="<?php echo base_url()?>index.php/boss/ingresar" class="collapsible-header"><i class="material-icons">add</i><span class="hide-menu"> Registrar taller </span></a>
                         </li>
-                        <li>
-                            <a href="<?php echo base_url()?>index.php/boss/perfilT" class="collapsible-header"><i class="material-icons">business_center</i><span class="hide-menu"> Perfil del taller </span></a>
-                        </li>
+
                         <li>
                             <a href="<?php echo base_url()?>index.php/boss/catalogo" class="collapsible-header"><i class="material-icons">build</i><span class="hide-menu"> Catalogo de talleres </span></a>
                         </li>
