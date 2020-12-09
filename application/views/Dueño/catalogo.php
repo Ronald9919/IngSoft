@@ -112,21 +112,23 @@
                 </div>
                 <div class="row">
                     <div class="col s12 m12">
+
+                    <?php foreach($data as $user){?>
                         <div class="card horizontal custom-gradient">
                             <div class="card-image hide-on-small-only">
                                 <img src="<?php echo base_url(); ?>assets/assets/images/cards/taller.svg" width="250px" height="200px" style="margin-top: 5%;">
                             </div>
                             <div class="card-stacked">
                                 <div class="card-content white-text">
-                                    <h5 class="card-title white-text" style="margin-top: 1%;">Taller Automotriz Campos</h5>
-                                    <p align="justify">Mecánica Automotriz, enderezado y pintura, servicio de alineado, 
-                                    corrección de muñones, rectificado de discos,  freno y tambor y electricidad automotriz</p>
-                                    <p align="justify"><i class="material-icons">location_on</i>Entrada a Colonia la Pradera 100 mts antes de la Concretera Salvadoreña San Miguel.</p>
-                                    <p>2667-8976</p>
-                                    <p>7678-7898</p>
+                                    <h5 class="card-title white-text" style="margin-top: 1%;"><?= $user->nombret;?></h5>
+                                    <p align="justify"><?= $user->servicios?></p>
+                                    <p align="justify"><i class="material-icons">location_on</i><?= $user->direccion?></p>
+                                    <p><?= $user->telefono?></p>
+                                    <p><?= $user->celular?></p>
                                 </div>
                             </div>
                         </div>
+                    <?php } ;?>    
                     </div>
                 </div>
             </div>

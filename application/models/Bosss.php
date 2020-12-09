@@ -67,5 +67,11 @@ class Bosss extends CI_Model
 		$this->db->where('id',$id);
 		return $this->db->delete("dueño");
 	}
+
+	/** Catalogo */
+
+	public function get_talleres(){
+		return $this->db->get('taller')->result();
+	} 
 }	
 ?>
