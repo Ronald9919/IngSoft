@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="row m-t-40">
                                     <div class="col s12">
-                                        <input onclick="M.toast({html: 'I am a toast'})" class="btn-large w100 red" type="submit" name="save" value="Registrarse"></input>
+                                        <input class="btn-large w100 red" type="submit" name="save" value="Registrarse"></input>
                                     </div>
                                 </div>
                             </form>

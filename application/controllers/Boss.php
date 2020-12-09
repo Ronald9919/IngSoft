@@ -23,10 +23,14 @@ class Boss extends CI_Controller {
 			$data['servicios']=$this->input->post('services');
 			$user = $this->Bosss->savetaller($data);
 			if($user){
-			        echo "Taller registrado correctamente";
+				echo'<script type="text/javascript">
+				alert("Taller registrado correctamente!");
+				</script>';
 			}
 			else{
-					echo "Error en el registro del taller!";
+				echo'<script type="text/javascript">
+				alert("Error en el registro del taller!");
+				</script>';
 			}
 		}
 	}
@@ -74,18 +78,14 @@ class Boss extends CI_Controller {
 			$data['contraseña']=$this->input->post('pwd');
 			$user=$this->Bosss->saverecords($data);
 			if($user){
-				echo '<div id="modal1" class="modal">';
-				echo '<div class="modal-content">';
-				echo '<h4>Modal Header</h4>';
-				echo '<p>Dueño registrado correctamente</p>';
-				echo '</div>';
-				echo '<div class="modal-footer">';
-				echo '<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>';
-				echo '</div>';
-				echo '</div>';
+				echo'<script type="text/javascript">
+				alert("Dueño registrado correctamente!");
+				</script>';
 			}
 			else{
-					echo "Error en el registro de dueño!";
+				echo'<script type="text/javascript">
+				alert("Error en el registro de dueño!");
+				</script>';
 			}
 		}
 	}
