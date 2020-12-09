@@ -143,12 +143,12 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="input-field col s11">
+                                        <div class="input-field col s10 m10 l10">
                                             <i class="material-icons prefix white-text">lock</i>
                                             <input class="inputText white-text" readonly value="<?=$user->contraseña?>" name="contraseña" id="pwd" type="password">
                                             <label for="password" class="white-text">Contraseña</label>
                                         </div>
-                                        <div class="col s1">
+                                        <div class="input-field col s2 m2 l2 center-align">
                                             <br><a class="btn-floating blue-grey" onclick="vercontra();"><i class="material-icons">remove_red_eye</i></a>
                                         </div>
                                     </div>
