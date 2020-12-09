@@ -32,7 +32,8 @@ class Boss extends CI_Controller {
 
 	public function catalogo()
 	{
-		$data = '';
+		$x = $this->Bosss->get_talleres();
+		$data['data']=$x;
 		$this->load->view('Dueño/catalogo',$data);
 	}
 
