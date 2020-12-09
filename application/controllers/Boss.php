@@ -5,6 +5,7 @@ class Boss extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->database();
+		$this->load->library('session');
 		$this->load->model('Bosss');
 		$this->load->helper('form');
         
@@ -39,8 +40,16 @@ class Boss extends CI_Controller {
 
 	public function perfilD()
 	{	
-		$usr = $this->input->post('username');
-		$found = $this->Bosss->get_usuario($usr);
+		$usr = "l";
+
+		if(!$this->session->has_userdata('username')){
+			$usr = $this->input->post('username');
+			$this->session->set_userdata('username', $usr);
+		}
+		
+		$user = $this->session->userdata('username');
+		
+		$found = $this->Bosss->get_usuario($user);
 		$data['user']=$found;
 		//print_r($data);
 		$this->load->view('Dueño/perfild',$data);/**/
@@ -87,7 +96,7 @@ class Boss extends CI_Controller {
 	public function delete($id){
 		$this->Bosss->delete_user($id);
 
-		header("location: ".base_url()."index.php/Boss/perfilD");
+		header("location: ".base_url());
 	}
 
 
