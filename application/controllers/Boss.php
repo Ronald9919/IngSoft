@@ -17,7 +17,7 @@ class Boss extends CI_Controller {
 
 	public function catalogo()
 	{
-		$this->load->view('Dueño/catalogo');
+		$this->load->view('Dueño/catalogo',$data);
 	}
 
 	public function perfilD()
