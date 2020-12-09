@@ -48,7 +48,7 @@
                                     <img src="<?php echo base_url(); ?>assets/assets/images/cards/Dueño.svg" width="200px" height="200px">
                                 </div>
                                 <div class="card-content center-align">
-                                    <h1><b>Dueño</b></h1>
+                                    <h1><b>Dueño de un taller</b></h1>
                                 </div>
                             </div>
                         </a>
