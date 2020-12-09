@@ -54,18 +54,18 @@
                         </div>
                         <!-- Form -->
                         <div class="row">
-                            <form class="col s12" action="<?php echo base_url()?>index.php/boss/perfilD">
+                            <form class="col s12" action="<?php echo base_url()?>index.php/boss/perfilD" method="post">
                                 <!-- email -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="Jhondoe" id="username" type="text" class="validate" required>
+                                        <input placeholder="Jhondoe" id="username" name="username" type="text" class="validate" required>
                                         <label for="username">Usuario</label>
                                     </div>
                                 </div>
                                 <!-- pwd -->
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="Contraseña" id="password" type="password" class="validate" required>
+                                        <input placeholder="Contraseña" id="password" name="password" type="password" class="validate" required>
                                         <label for="password">Contraseña</label>
                                     </div>
                                 </div>

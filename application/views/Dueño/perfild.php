@@ -180,7 +180,7 @@
                 <div class="modal-footer">
                     <a href="#!" class="modal-close waves-effect waves-ligth white-text btn">Cerrar</a>
                     <a class="modal-close waves-effect waves-ligth white-text btn"
-                        href="<?php echo base_url()?>boss/delete/<?php echo $user->id; ?>">Si</a>
+                        href="<?php echo base_url()?>index.php/boss/delete/<?php echo $user->id; ?>">Si</a>
                 </div>
             </div>
             <footer class="center-align m-b-30"></footer>

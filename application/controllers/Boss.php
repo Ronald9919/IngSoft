@@ -37,12 +37,12 @@ class Boss extends CI_Controller {
 	}
 
 	public function perfilD()
-	{
-		$id=1;
-		$x=$this->Bosss->get_id($id);
-		$data['user']=$x;
+	{	
+		$usr = $this->input->post('username');
+		$found = $this->Bosss->get_usuario($usr);
+		$data['user']=$found;
 		//print_r($data);
-		$this->load->view('Dueño/perfild',$data);
+		$this->load->view('Dueño/perfild',$data);/**/
 	}
 
 	public function perfilT()
@@ -85,6 +85,8 @@ class Boss extends CI_Controller {
 	/** en el boton solo manda Boss/delete/<?=$user->id?> para eliminarlo*/
 	public function delete($id){
 		$this->Bosss->delete_user($id);
+
+		header("location: ".base_url()."index.php/Boss/perfilD");
 	}
 
 
