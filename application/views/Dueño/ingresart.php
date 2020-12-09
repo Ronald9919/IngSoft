@@ -148,7 +148,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input class="btn blue-grey waves-effect waves-light right" type="submit" name="savetaller">Registrar taller
+                                            <input class="btn blue-grey waves-effect waves-light right" type="submit" name="savetaller" value="Registrar taller">
                                         </input>
                                         </div>
                                     </div>
