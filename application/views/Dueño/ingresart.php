@@ -108,7 +108,7 @@
                         <div class="card custom-gradient">
                             <div class="card-content">
                                 <h5 class="card-title white-text">Registrar taller</h5>
-                                <form action="ingresart.html">
+                                <form method="post">
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">build</i>
