@@ -148,8 +148,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <button class="btn blue-grey waves-effect waves-light right" type="submit" name="savetaller">Registrar taller
-                                            </button>
+                                            <input class="btn blue-grey waves-effect waves-light right" type="submit" name="savetaller">Registrar taller
+                                        </input>
                                         </div>
                                     </div>
                                 </form>
