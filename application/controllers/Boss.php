@@ -65,7 +65,15 @@ class Boss extends CI_Controller {
 			$data['contraseña']=$this->input->post('pwd');
 			$user=$this->Bosss->saverecords($data);
 			if($user){
-			        echo "Dueño registrado correctamente";
+				echo '<div id="modal1" class="modal">';
+				echo '<div class="modal-content">';
+				echo '<h4>Modal Header</h4>';
+				echo '<p>Dueño registrado correctamente</p>';
+				echo '</div>';
+				echo '<div class="modal-footer">';
+				echo '<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>';
+				echo '</div>';
+				echo '</div>';
 			}
 			else{
 					echo "Error en el registro de dueño!";

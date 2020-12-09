@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/assets/images/favicon.png">
-    <title>Materialart Admin Template</title>
+    <title>Catalogo de talleres</title>
     <!-- chartist CSS -->
     <link href="<?php echo base_url(); ?>assets/dist/css/style.css" rel="stylesheet">
     <!-- This page CSS -->
