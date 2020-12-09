@@ -83,7 +83,7 @@
                             <a href="<?php echo base_url()?>index.php/conductor/catalogo" class="collapsible-header"><i class="material-icons">build</i><span class="hide-menu">Ver catalogo de talleres </span></a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url();?>Login/close" class="collapsible-header"><i
+                            <a href="<?php echo base_url();?>index.php" class="collapsible-header"><i
                                     class="material-icons">exit_to_app</i><span class="hide-menu"> Salir </span></a>
                         </li>
                     </ul>
