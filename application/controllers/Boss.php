@@ -43,8 +43,7 @@ class Boss extends CI_Controller {
 	}
 
 	public function perfilD()
-	{	
-		$usr = "l";
+	{
 
 		if(!$this->session->has_userdata('username')){
 			$usr = $this->input->post('username');
