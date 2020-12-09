@@ -112,7 +112,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">build</i>
-                                            <input class="white-text" placeholder="Taller de Jhon Doe" name="name" type="text">
+                                            <input class="white-text" placeholder="Taller de Jhon Doe" name="name" type="text" required>
                                             <label for="name" class="white-text">Nombre del Taller</label>
                                         </div>
                                     </div>
@@ -121,35 +121,35 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">location_on</i>
-                                            <input class="white-text" placeholder="La direccion de Jhon Doe" name="direction" type="text">
+                                            <input class="white-text" placeholder="La direccion de Jhon Doe" name="direction" type="text" required>
                                             <label for="direction" class="white-text">Direccion del taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">call</i>
-                                            <input class="white-text" placeholder="26679945" name="tphone" type="number">
+                                            <input class="white-text" placeholder="26679945" name="tphone" type="number" required>
                                             <label for="tphone" class="white-text">Telefono del taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">call</i>
-                                            <input class="white-text" placeholder="75463723" name="phone" type="number">
+                                            <input class="white-text" placeholder="75463723" name="phone" type="number" required>
                                             <label for="phone" class="white-text">Celular del taller</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">business_center</i>
-                                            <input class="white-text" placeholder="Mecanica automotriz" name="services" type="text">
+                                            <input class="white-text" placeholder="Mecanica automotriz" name="services" type="text" required>
                                             <label for="services" class="white-text">Servicios</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <input class="btn blue-grey waves-effect waves-light right" type="submit" name="savetaller" value="Registrar taller">
-                                        </input>
+                                            </input>
                                         </div>
                                     </div>
                                 </form>
