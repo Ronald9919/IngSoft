@@ -6,24 +6,9 @@ class Boss extends CI_Controller {
 		parent::__construct();
 		$this->load->database();
 		$this->load->model('Bosss');
+		$this->load->helper('form');
         
     }
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
 
 	public function ingresar()
 	{
@@ -62,7 +47,7 @@ class Boss extends CI_Controller {
 			$data['usuario']=$this->input->post('username');
 			$data['contraseña']=$this->input->post('pwd');
 			$user=$this->Bosss->saverecords($data);
-			if($user>0){
+			if($user){
 			        echo "Dueño registrado correctamente";
 			}
 			else{
@@ -71,20 +56,20 @@ class Boss extends CI_Controller {
 		}
 	}
 
-	public function update($id = null){    
+	public function update(){    
         
-		$this->Bosss->update(
-			$this->input->post("nombre"),
-			$this->input->post("apellido"),
-			$this->input->post("usuario"),
-			$this->input->post("contraseña"));
-
-	header("location: ".base_url()."perfilD");
+		if($this->Bosss->update($_POST)){
+			header("location: ".base_url()."index.php/Boss/perfilD");
+		}else{
+			/* manda algun mensaje de error o algo */
+		}
    
-}
-
-
-        
+	}  
+	
+	/** en el boton solo manda Boss/delete/<?=$user->id?> para eliminarlo*/
+	public function delete($id){
+		$this->Bosss->delete_user($id);
+	}
 
 }
 ?>

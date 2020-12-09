@@ -9,13 +9,6 @@
     <title>Catatogo de Talleres</title>
     <!-- chartist CSS -->
     <link href="<?php echo base_url(); ?>assets/dist/css/style.css" rel="stylesheet">
-    <!-- This page CSS -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function habilita() {
@@ -124,32 +117,33 @@
                         <div class="card custom-gradient">
                             <div class="card-content">
                                 <h5 class="card-title white-text">Informacion del Dueño</h5>
-                                <form>
+                                <?=form_open("boss/update")?>
                                     <div class="row">
+                                    <input type="hidden" value="<?=$user->id;?>" name="id">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">face</i>
-                                            <input class="inputText white-text" readonly value="<?=$user->nombre?>" id="name" type="text">
+                                            <input class="inputText white-text" readonly value="<?=$user->nombre?>" name="nombre" id="name" type="text">
                                             <label for="name" class="white-text">Nombre</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">face</i>
-                                            <input class="inputText white-text" readonly value="<?=$user->apellido?>" id="lastname" type="text">
+                                            <input class="inputText white-text" readonly value="<?=$user->apellido?>" name="apellido" id="lastname" type="text">
                                             <label for="lastname" class="white-text">Apellido</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix white-text">account_circle</i>
-                                            <input class="inputText white-text" readonly value="<?=$user->usuario?>" id="username" type="text">
+                                            <input class="inputText white-text" readonly value="<?=$user->usuario?>" name="usuario" id="username" type="text">
                                             <label for="username" class="white-text">Usuario</label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s11">
                                             <i class="material-icons prefix white-text">lock</i>
-                                            <input class="inputText white-text" readonly value="<?=$user->contraseña?>" id="pwd" type="password">
+                                            <input class="inputText white-text" readonly value="<?=$user->contraseña?>" name="contraseña" id="pwd" type="password">
                                             <label for="password" class="white-text">Contraseña</label>
                                         </div>
                                         <div class="col s1">
@@ -162,15 +156,15 @@
                                             </a>
                                         </div>
                                         <div class="input-field col s12 m4 l4">
-                                            <button class="btn blue-grey waves-effect waves-light col s12 m12 l12" type="submit" name="action">Guardar dueño
+                                            <button class="btn blue-grey waves-effect waves-light col s12 m12 l12" type="submit">Guardar dueño
                                             </button>
                                         </div>
                                         <div class="input-field col s12 m4 l4">
-                                            <a class="btn blue-grey waves-effect waves-light col s12 m12 l12">Eliminar dueño
+                                            <a class="btn blue-grey waves-effect waves-light col s12 m12 l12">Eliminar Cuenta
                                             </a>
                                         </div>
                                     </div>
-                                </form>
+                                <?=form_close()?>
                             </div>
                         </div>
                     </div>                 
