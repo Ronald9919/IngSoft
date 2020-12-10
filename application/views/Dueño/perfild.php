@@ -176,8 +176,9 @@
                 <div class="modal-content">
                     <h4><i class="small material-icons">warning</i>&nbsp;ADVERTENCIA</h4>
                     <hr style="width:100%;border: 1px solid gray">
-                    <span class="grey-text ">Esta a punto de eliminar un cliente esta seguro de eliminarlo?. Recuerde
-                        que los clientes eliminados no pueden ser recuperados.</span>
+                    <span class="grey-text ">Esta a punto de eliminarse, esta seguro de 
+                    eliminarse porque cuando usted se elimine no podra volver a ingresar con este usuario?. Recuerde
+                        que sus datos no pueden ser recuperados.</span>
                 </div>
                 <div class="modal-footer">
                     <a href="#!" class="modal-close waves-effect waves-ligth white-text btn">Cerrar</a>
